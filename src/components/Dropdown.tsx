@@ -19,7 +19,7 @@ const DropDown: React.FC<IDropDownProps> = ({
   useClickOutside(dropdownRef, closeDropdown);
 
   return (
-    <div ref={dropdownRef} className='relative inline-block text-left mb-4'>
+    <div ref={dropdownRef} className='relative inline-block text-left'>
       <button
         onClick={() => {
           setOpen(!open);

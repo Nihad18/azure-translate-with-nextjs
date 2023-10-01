@@ -65,7 +65,7 @@ const TranslateBox: React.FC = () => {
   };
   return (
     <div className='translate-box w-screen p-10 md:p-5 flex flex-col justify-center'>
-      <div className='flex md:justify-center justify-between'>
+      <div className='flex items-center md:justify-center justify-between mb-4'>
         <div className='w-fit md:w-[45%]'>
           <DropDown
             active={activeTextAreaLang}
