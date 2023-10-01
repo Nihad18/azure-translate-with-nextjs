@@ -57,7 +57,12 @@ const TranslateBox: React.FC = () => {
   const AnswerBoxLanguages: ILanguage[] = availableLanguages.filter(
     (lang) => lang.prefix !== activeTextAreaLang.prefix
   );
-
+  const changeLanguage = (): void => {
+    setActiveTextAreaLang(activeAnswerBoxLang);
+    setActiveAnswerBoxLang(activeTextAreaLang);
+    setText(answer);
+    setAnswer(text);
+  };
   return (
     <div className='translate-box w-screen p-10 md:p-5 flex flex-col justify-center'>
       <div className='flex md:justify-center justify-between'>
@@ -68,10 +73,14 @@ const TranslateBox: React.FC = () => {
             availableLanguages={TextAreaLanguages}
           />
         </div>
-        <div
-          className="text-xl text-bold w-fit md:w-[10%] flex justify-center items-center"
-        >
-          <BsArrowLeftRight className={`${translate === true ? "opacity-50" : ""}`} />
+        <div className='text-xl text-bold w-fit md:w-[10%] flex justify-center items-center'>
+          <button onClick={changeLanguage} disabled={translate}>
+            <BsArrowLeftRight
+              className={`${
+                translate === true ? "opacity-50 cursor-wait" : "cursor-pointer"
+              }`}
+            />
+          </button>
         </div>
         <div className='w-fit md:w-[45%]'>
           <DropDown
