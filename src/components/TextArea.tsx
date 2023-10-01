@@ -15,7 +15,7 @@ const TextArea: React.FC<ITextAreaProps> = ({
           }}
         />
         <div
-          className='cursor-pointer absolute top-3 right-6'
+          className='cursor-pointer select-none text-xl absolute top-3 right-6'
           onClick={() => {
             setText("");
           }}
