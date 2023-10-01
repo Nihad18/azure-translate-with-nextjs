@@ -1,3 +1,18 @@
+<h1 align="center">{Azure translate project}</h1>
+<div align="center">
+  <h2>
+    <a href="https://nihadbalakisiyev.netlify.app">
+      Demo
+    </a>
+  </h3>
+</div>
+
+## Built With
+
+- [NextJs]
+- [TypeScript]
+- [TailwindCss]
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
