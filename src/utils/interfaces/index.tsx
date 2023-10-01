@@ -1,5 +1,3 @@
-import { ChangeEvent } from "react";
-
 export interface ILanguage {
   lang: string;
   prefix: string;
