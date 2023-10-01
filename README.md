@@ -1,7 +1,7 @@
 <h1 align="center">{Azure translate project}</h1>
 <div align="center">
   <h2>
-    <a href="https://nihadbalakisiyev.netlify.app">
+    <a href="https://azure-translate-app.netlify.app/">
       Demo
     </a>
   </h3>
